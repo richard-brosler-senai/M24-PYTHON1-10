@@ -14,5 +14,12 @@ def mostrar_titulo(titulo = "Programa", num_col = 40):
     print("|" + espacos + titulo + espacos + "|")
     print("+" + "-" * num_col + "+")
 
+def fatorial(valor):
+    # 5! = 5x4x3x2x1 = 120
+    res = 1
+    for i in range(valor,1,-1):
+        res *= i # res = res * i
+    return res
+
 if __name__ == "__main__":
     mostrar_titulo("Programa de teste",50)
