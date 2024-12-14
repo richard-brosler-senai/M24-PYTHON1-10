@@ -19,7 +19,17 @@ def fatorial(valor):
     res = 1
     for i in range(valor,1,-1):
         res *= i # res = res * i
+    valor = 60
     return res
+
+def popular_lista(lista):
+    for i in range(5):
+        lista.append(i)
+
+def fatorial_rec(valor):
+    if valor < 2:
+        return 1
+    return valor * fatorial_rec(valor - 1)
 
 if __name__ == "__main__":
     mostrar_titulo("Programa de teste",50)
